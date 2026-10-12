@@ -1,0 +1,81 @@
+:root {
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  color: #23312d;
+  background: #f8f9f6;
+  line-height: 1.6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 16rem 1fr;
+  min-height: 100vh;
+}
+
+.menu {
+  padding: 1.5rem 1rem;
+  border-right: 1px solid #dce3dd;
+  background: #fff;
+}
+
+.menu ol {
+  padding-left: 1.25rem;
+}
+
+.menu a {
+  color: #21634c;
+}
+
+.menu a.activo {
+  font-weight: 700;
+}
+
+.contenido {
+  padding: 2rem;
+  max-width: 48rem;
+}
+
+.error {
+  color: #b3261e;
+  margin: 0.25rem 0 0;
+  font-size: 0.9rem;
+}
+
+.campo {
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.campo input:not([type='checkbox']):not([type='radio']),
+.campo select,
+.campo textarea {
+  display: block;
+  width: 100%;
+  max-width: 28rem;
+  padding: 0.4rem;
+}
+
+.tarjeta {
+  border: 1px solid #dce3dd;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: #fff;
+  margin: 0.5rem 0;
+}
+
+button {
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 40rem) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
